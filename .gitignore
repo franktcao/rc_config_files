@@ -1,0 +1,2 @@
+# Ignore all the stuff generated in the Vim Undo Directory
+.vim/undodir/
