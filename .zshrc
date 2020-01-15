@@ -18,6 +18,15 @@ fi
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
+# Default PS1
+#export PS1=%n@%m %1~ %# 
+#export PS1='%{%F{white}[%D %@] %n@mbp20 %}%}%}%3~: '
+# Bold, underline, white, date, time, username @ mbp, path up to 3 previous, end bold, underline and colors: 
+export PS1="%B%U%{%F{white}%}[%D %@] %n@mbp20:%3~ %{$%f%}% %b%u%  "
+#%n%{%f%}@%{%F{blue}%}%m %{%F{yellow}%}%~ %{$%f%}%% "
+
+
+
 bindkey "^[[5~" history-search-backward
 bindkey "^[[6~" history-search-forward
 # define widget function
