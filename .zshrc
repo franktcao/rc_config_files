@@ -14,6 +14,10 @@ if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
 
+# Gives colors to terminal
+export CLICOLOR=1
+export LSCOLORS=GxFxCxDxBxegedabagaced
+
 bindkey "^[[5~" history-search-backward
 bindkey "^[[6~" history-search-forward
 # define widget function
